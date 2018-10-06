@@ -137,6 +137,19 @@ Gradleビューのツリー表示の中にある openCVLibrary343 → Tasks → 
 
   - ![img10.png](images/img10.png)
 
+## aarファイルを他のプロジェクトで使う手順
+aarファイルをプロジェクトのlibsディレクトリに配置
+
+  - ![img11.png](images/img11.png)
+
+build.gradleのdependenciesに次の1行を追加する。
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation 'com.android.support:appcompat-v7:28.0.0'
+        implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+        implementation files('libs/openCVLibrary343-release.aar')   ← この行を追加する
+    }
 
 ## Copyright and license
 Copyright (c) 2018 yoggy
