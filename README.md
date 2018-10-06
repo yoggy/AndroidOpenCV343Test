@@ -1,5 +1,5 @@
 # AndroidOpenCV343Test
-Android StudioでOpenCV 3.4.3を使う手順メモ (*.soをアプリに含めてしまう手順)
+Android Studio 3.2でOpenCV 3.4.3を使う手順メモ (*.soをアプリに含めてしまう手順)
 
 ## ダウンロード＆解凍
 opencv-3.4.3-android-sdk.zipを https://opencv.org/releases.html からダウンロード＆解凍する。
